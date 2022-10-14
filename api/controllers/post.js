@@ -54,7 +54,7 @@ export const addPost = (req, res) => {
 
 export const deletePost = (req, res) => {
   const token = req.cookies.access_token;
-
+  // ?
   // we are checking cookies if there is user if not we cannot delete post so below code does that
   if (!token) return res.status(401).json("Not authenticated");
 
